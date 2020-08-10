@@ -57,7 +57,7 @@ function draw(){
   m = int(minute()/10);
   n = minute()%10;
   sec = second();
-  w =  new Date().getDay() - 1;//jsdate.getDay();
+  w = jsdate.getDay();
   mnth = month() - 1;
   d = int(day()/10);
   ay = day() % 10;
@@ -84,9 +84,9 @@ function draw(){
   rect(xpoint + 1*(180+l_rect)+180, ypoint + 100, colon_w, colon_w, 50);
   rect(xpoint + 1*(180+l_rect)+180, ypoint + 240, colon_w, colon_w, 50);
 
-  //Calender
+  //Calendar
 
-    // Month
+   
 
   for(var i = 0; i < 3; i++){
       sixteen_seg(months[mnth][i], xCal, yCal, lCal, bCal);  // x : y : 7 : 2
