@@ -57,7 +57,7 @@ function draw(){
   m = int(minute()/10);
   n = minute()%10;
   sec = second();
-  w = jsdate.getDay();
+  w = getWeek();
   mnth = month() - 1;
   d = int(day()/10);
   ay = day() % 10;
