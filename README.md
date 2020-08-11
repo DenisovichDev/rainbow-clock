@@ -1,5 +1,5 @@
 # rainbow-clock
-This is a GitHub page for anusha-exe/rainbow-wallpaper-clock repo.
+This is a GitHub page for rainbow-wallpaper-clock repo. It is still very much under construction and development.
 ## Acknowledgements:
 Dan Shiffman's YT [videos](https://www.youtube.com/c/TheCodingTrain)
 ## Authors:
