@@ -62,10 +62,11 @@ function draw(){
   var yCal = ypoint + 2*l_rect + 3*b_rect + 70;
   var lCal = l_rect/6;  var bCal = 5;    // 7 : 2
 
-  circularGrad(0, 0, purple, pink, 0.75);
-  circularGrad(width, 0, indigo, pink, 0.75);
-  circularGrad(0, height, orange, pink, 0.75);
-  circularGrad(width, height, yellow, pink, 0.75);
+  circularGrad(0, 0, c1, c5, 0.75);
+  circularGrad(width, 0, c2, c5, 0.75);
+  circularGrad(0, height, c3, c5, 0.75);
+  circularGrad(width, height, c4, c5, 0.75);
+
 
   scale(scaleFactor);
 
