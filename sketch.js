@@ -1,5 +1,3 @@
-//import java.util.Date;
-
 var today;
 var w;
 var mnth;
@@ -18,40 +16,38 @@ var b_rect=40;
 var xpoint=300;
 var ypoint=240;
 var colon_w = 60;
-//Colors
-let orange;
-let yellow;
-let green_;
-let blue_;
-let pink;
-let purple;
-let indigo;
+//HTML objects
+var sliders;
+var canvas;
+var scaleFactor = 0.6;
+//Color
+var c1;
+var c2;
+var c3;
+var c4;
+var c5;
 
-let scaleFactor = 0.6;
 function setup ()
 {
   canvas = createCanvas(1600*scaleFactor, 1000*scaleFactor);
-  createP('')
-  sliderR = createSlider(0, 255, 0xFE);
-  sliderG = createSlider(0, 255, 0x70);
-  sliderB = createSlider(0, 255, 0x00);
-  sliderR.position(width + 50, 30);
-  sliderG.position(width + 50, 50);
-  sliderB.position(width + 50, 70);
+  
+  sliders = makeSliders(colors);
+  setSlider(sliders);
+  
   frameRate(1);
-  orange = color(sliderR.value(), sliderB.value(), sliderG.value());//'#FE7000');
-  yellow = color('#F0FF00');
-  green_ = color('#2EFF00');
-  blue_ = color('#007BFE');
-  pink = color('#FF60CF');
-  purple = color('#770596');
-  indigo = color('#27E0B9');
+
 }
 
 
 function draw(){
   background(255);
   orange = color(sliderR.value(), sliderB.value(), sliderG.value());//'#FE7000');
+  
+  c1 = color(sliders[0][0].value(), sliders[0][1].value(), sliders[0][2].value());
+  c2 = color(sliders[1][0].value(), sliders[1][1].value(), sliders[1][2].value());
+  c3 = color(sliders[2][0].value(), sliders[2][1].value(), sliders[2][2].value());
+  c4 = color(sliders[3][0].value(), sliders[3][1].value(), sliders[3][2].value());
+  c5 = color(sliders[4][0].value(), sliders[4][1].value(), sliders[4][2].value());
   
   h = int(hour()/10);
   r = hour()%10;
