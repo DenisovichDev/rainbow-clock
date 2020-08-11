@@ -1,7 +1,7 @@
 //import java.util.Date;
 
-var w;
 var today;
+var w;
 var mnth;
 var d;
 var ay;
@@ -58,7 +58,7 @@ function draw(){
   m = int(minute()/10);
   n = minute()%10;
   sec = second();
-  today= new Date();
+  today = new Date();
   w = today.getDay();
   mnth = month() - 1;
   d = int(day()/10);
