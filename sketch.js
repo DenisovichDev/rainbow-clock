@@ -41,7 +41,6 @@ function setup ()
 
 function draw(){
   background(255);
-  orange = color(sliderR.value(), sliderB.value(), sliderG.value());//'#FE7000');
   
   c1 = color(sliders[0][0].value(), sliders[0][1].value(), sliders[0][2].value());
   c2 = color(sliders[1][0].value(), sliders[1][1].value(), sliders[1][2].value());
