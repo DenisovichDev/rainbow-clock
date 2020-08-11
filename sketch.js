@@ -1,6 +1,7 @@
 //import java.util.Date;
 
 var w;
+var today;
 var mnth;
 var d;
 var ay;
@@ -51,13 +52,14 @@ function setup ()
 function draw(){
   background(255);
   orange = color(sliderR.value(), sliderB.value(), sliderG.value());//'#FE7000');
-
+  
   h = int(hour()/10);
   r = hour()%10;
   m = int(minute()/10);
   n = minute()%10;
   sec = second();
-  w = 0;
+  today= new Date();
+  w = today.getDay();
   mnth = month() - 1;
   d = int(day()/10);
   ay = day() % 10;
