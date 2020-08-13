@@ -6,6 +6,7 @@ var colors = [
   [0xFF, 0x60, 0xCF]
 ];
 
+var tags = ['Top-Left', 'Top-Right', 'Bottom-Left', 'Bottom-Right', 'Middle']
 
 function makeSliders(arr){
   var sliders = [];
@@ -20,12 +21,15 @@ function makeSliders(arr){
 
 function setSlider(arr){
   var x = width + 70;
-  var y = 50;
+  var y = 350;
+  var tag;
   for(var i = 0; i < arr.length; i++){
+    tag = createP(tags[i] + ':');
+    tag.position(x, y - 40);
     for(var j = 0; j < arr[i].length; j++){
       arr[i][j].position(x, y);
-      y += 20
+      y += 10
     }
-    y += 100
+    y += 70
   }
 }
