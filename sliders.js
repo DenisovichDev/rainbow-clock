@@ -28,7 +28,7 @@ function setSlider(arr){
     tag.position(x, y - 40);
     for(var j = 0; j < arr[i].length; j++){
       arr[i][j].position(x, y);
-      y += 20
+      y += 30
     }
     y += 70
   }
