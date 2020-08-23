@@ -1,5 +1,6 @@
 # rainbow-clock
-This is a GitHub page for rainbow-clock featuring a Rainbow Clock with calendar using the concept of segments and bitwise operations.
+This is a Rainbow Clock with calendar using the concept of segments and bitwise operations, dedicated to Daniel Shiffman for his love for rainbows. This first little project has reached its completion.
+
 
 [Click](https://ivan-denisovich-py.github.io/rainbow-clock/) to see the live demo of the Rainbow Clock!
 
